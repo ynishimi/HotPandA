@@ -5,11 +5,13 @@
     "manifest_version": 3,
     "content_scripts": [
       {
-        "matches": [
-          "https://panda.ecs.kyoto-u.ac.jp/cas/logout?service=https://panda.ecs.kyoto-u.ac.jp%2fportal",
-           "https://panda.ecs.kyoto-u.ac.jp/portal/"
-          ],
-        "js": ["content.js"]
+        "matches": ["https://panda.ecs.kyoto-u.ac.jp/cas/logout?service=https://panda.ecs.kyoto-u.ac.jp%2fportal"],
+        "js": ["content_logout.js"]
+      },
+      {
+        "matches": ["https://panda.ecs.kyoto-u.ac.jp/portal/"],
+        "js": ["content_portal.js"]
       }
+
     ]
   }
