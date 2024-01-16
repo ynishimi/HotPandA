@@ -1,6 +1,6 @@
 {
     "name": "HotPandA",
-    "description": "Automatically takes you to the login page",
+    "description": "Automatically takes you to the login page on PandA course site",
     "version": "0.1",
     "manifest_version": 3,
     "content_scripts": [
