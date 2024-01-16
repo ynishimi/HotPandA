@@ -1,0 +1,15 @@
+{
+    "name": "HotPandA",
+    "description": "Automatically takes you to the login page",
+    "version": "0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": [
+          "https://panda.ecs.kyoto-u.ac.jp/cas/logout?service=https://panda.ecs.kyoto-u.ac.jp%2fportal",
+           "https://panda.ecs.kyoto-u.ac.jp/portal/"
+          ],
+        "js": ["content.js"]
+      }
+    ]
+  }
